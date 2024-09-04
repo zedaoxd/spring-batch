@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: migracao-de-dados
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/spring-bat-01
+    username: root
+    password: root
+  batch:
+    jdbc:
+      initialize-schema: always
+  threads:
+    virtual:
+      enabled: true
+app:
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/app
+    username: root
+    password: root
