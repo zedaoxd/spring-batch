@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: envio-emails-batch
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/spring-bat-01
+    username: root
+    password: root
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 23164989aca6e1
+    password: b8637a91b10c17
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+app:
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/app
+    username: root
+    password: root
