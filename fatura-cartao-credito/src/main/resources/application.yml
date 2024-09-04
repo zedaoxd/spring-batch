@@ -1,0 +1,15 @@
+spring:
+  application:
+    name=fatura-cartao-credito
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/spring-bat-01
+    username: root
+    password: root
+  batch:
+    jdbc:
+      initialize-schema: always
+app:
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/app
+    username: root
+    password: root
